@@ -1,0 +1,53 @@
+{
+  "id": "com.submiguelenos.app",
+  "name": "Submigueleños - Tarjeta de Puntos y Fidelización",
+  "short_name": "Submigueleños",
+  "description": "Acumula puntos, sube de nivel y canjea premios exclusivos en Submigueleños.",
+  "lang": "es-CO",
+  "start_url": "/?app=android",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait",
+  "background_color": "#0a0a0a",
+  "theme_color": "#d97706",
+  "categories": ["food", "lifestyle", "shopping"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Mi Código QR",
+      "short_name": "Mi QR",
+      "description": "Mostrar mi tarjeta QR en caja",
+      "url": "/?app=android&tab=QR",
+      "icons": [{ "src": "/icon.svg", "sizes": "192x192", "type": "image/svg+xml" }]
+    },
+    {
+      "name": "Catálogo de Premios",
+      "short_name": "Premios",
+      "description": "Ver recompensas disponibles",
+      "url": "/?app=android&tab=REWARDS",
+      "icons": [{ "src": "/icon.svg", "sizes": "192x192", "type": "image/svg+xml" }]
+    },
+    {
+      "name": "Terminal Caja POS",
+      "short_name": "Caja POS",
+      "description": "Abrir terminal de cajero",
+      "url": "/?view=POS",
+      "icons": [{ "src": "/icon.svg", "sizes": "192x192", "type": "image/svg+xml" }]
+    }
+  ]
+}
+

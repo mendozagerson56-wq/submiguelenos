@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: submiguelenos-produccion
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: submiguelenos-db
+          property: connectionString
+
+databases:
+  - name: submiguelenos-db
+    plan: free
+    databaseName: submiguelenos
+    user: submiguelenos_user
+

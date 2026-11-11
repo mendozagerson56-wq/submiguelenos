@@ -1,0 +1,8 @@
+{
+  "name": "Submigueleños - Fidelización de Restaurante",
+  "description": "Plataforma de acumulación y redención de puntos para clientes de Submigueleños con caja rápida POS y backoffice administrativo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
